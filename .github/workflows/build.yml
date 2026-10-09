@@ -1,4 +1,5 @@
-name: EmployeeInformation CI/CD
+
+name: splitmate CI/CD
 
 on:
   push:
@@ -12,6 +13,10 @@ permissions:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: Checkout source code
@@ -39,4 +44,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/murugan-4150/employee-information:latest
+          tags: ghcr.io/murugan-4150/splitmate:latest

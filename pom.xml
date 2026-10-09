@@ -55,6 +55,13 @@
 			<artifactId>spring-boot-starter-json</artifactId>
 		</dependency>
 
+		<!-- Phone number validation (Google libphonenumber) -->
+		<dependency>
+			<groupId>com.googlecode.libphonenumber</groupId>
+			<artifactId>libphonenumber</artifactId>
+			<version>8.13.50</version>
+		</dependency>
+
 		<!-- JWT Support (JJWT) -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>

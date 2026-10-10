@@ -17,18 +17,6 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.List;
 
-/**
- * Spring Security configuration for the SplitMate API.
- *
- * <ul>
- *   <li>Stateless session management (JWT-based)</li>
- *   <li>CSRF disabled (stateless API)</li>
- *   <li>Public endpoints: /api/auth/**, /actuator/health</li>
- *   <li>All other endpoints require authentication</li>
- *   <li>BCrypt password encoder</li>
- *   <li>CORS configured for Angular dev server</li>
- * </ul>
- */
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
